@@ -4087,7 +4087,7 @@ textarea.form-control-lg {
     display: none;
   }
 }
-@media (min-width:1400px) {
+@media (min-width:1480px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
