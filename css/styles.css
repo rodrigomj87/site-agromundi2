@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
 /*!
 * Start Bootstrap - Modern Business v5.0.0 (https://startbootstrap.com/template-overviews/modern-business)
 * Copyright 2013-2021 Start Bootstrap
@@ -2606,13 +2607,13 @@ textarea.form-control-lg {
   }
 }
 .form-floating > .form-control::-moz-placeholder {
-  color: transparent;
+  color: rgba(0, 0, 0, 0.507);
 }
 .form-floating > .form-control:-ms-input-placeholder {
-  color: transparent;
+  color: rgba(0, 0, 0, 0.507);
 }
 .form-floating > .form-control::placeholder {
-  color: transparent;
+  color: rgba(0, 0, 0, 0.507);
 }
 .form-floating > .form-control:not(:-moz-placeholder-shown) {
   padding-top: 1.625rem;
