@@ -1133,8 +1133,19 @@ progress {
   .col-md-3 {
     flex: 0 0 auto;
     width: 25%;
+    text-align: center;
   }
 
+  .login p{
+    font-weight: 500;
+  }
+
+  .login div{
+    justify-content: center;
+  }
+  .login div a img{
+    width: 10rem;
+  }
   .col-md-4 {
     flex: 0 0 auto;
     width: 33.3333333333%;
@@ -3869,6 +3880,11 @@ textarea.form-control-lg {
   list-style: none;
 }
 
+.nav-slogan{
+  font-size: 0.88rem;
+  margin-left: 3.2rem;
+  color: rgb(16, 133, 31);
+}
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -3986,6 +4002,12 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
+}
+.navbar-brand a{
+  text-decoration: none;
+}
+.navbar-brand a img {
+  height: 4.5rem;
 }
 .navbar-nav {
   display: flex;
