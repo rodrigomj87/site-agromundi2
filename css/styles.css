@@ -459,10 +459,16 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.90rem;
   font-weight: 300;
+ }
+.lead-ajust{
+  letter-spacing: 0.04em;
+  text-align: center;
 }
-
+.text-shadow-1{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.76);
+}
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;
@@ -511,10 +517,14 @@ progress {
   font-size: calc(1.425rem + 2.1vw);
   font-weight: 100;
   line-height: 1.2;
+  text-align: center;
+ 
 }
 @media (min-width: 1200px) {
   .display-5 {
     font-size: 3rem;
+    letter-spacing: 0.07em;
+    text-align: center;
   }
 }
 
