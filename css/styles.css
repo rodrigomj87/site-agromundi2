@@ -887,7 +887,7 @@ progress {
 .g-5,
 .gx-5 {
   --bs-gutter-x: 3rem;
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 .g-5,
 .gy-5 {
@@ -2626,7 +2626,7 @@ textarea.form-control-lg {
 }
 
 .form-floating {
-  position: relative;
+  position: unset;
 }
 .form-floating > .form-control,
 .form-floating > .form-select {
@@ -5010,6 +5010,7 @@ textarea.form-control-lg {
     border-left-width: 1px;
   }
 }
+
 @media (min-width: 768px) {
   .list-group-horizontal-md {
     flex-direction: row;
@@ -7171,7 +7172,10 @@ textarea.form-control-lg {
   padding-right: 3rem !important;
   padding-left: 3rem !important;
 }
-
+.px-6 {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
 .py-0 {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -7200,6 +7204,8 @@ textarea.form-control-lg {
 .py-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
+  padding-right: 1rem;
+  padding-left: 1rem;
   /* width: 100%;
   height: 100vh; */
 }
@@ -7217,7 +7223,7 @@ textarea.form-control-lg {
 }
 .sectionFull {
   width: 100%;
-  height: 100vh;
+  height: 115vh;
 }
 
 .pt-0 {
