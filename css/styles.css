@@ -465,7 +465,7 @@ progress {
 .lead-ajust{
   font-weight: 300;
   font-size: 1.90rem;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 .lead-contact{
@@ -7223,7 +7223,7 @@ textarea.form-control-lg {
 }
 .sectionFull {
   width: 100%;
-  height: 115vh;
+  height: 120vh;
 }
 
 .pt-0 {
