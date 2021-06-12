@@ -3,22 +3,27 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Um sistema completo para o seu agronegocio. Um sistema que vai revolucionar a maneira de lidar com a agricultura convencional e organica." />
     <meta name="author" content="Agromundi" />
     <title>AGROMUNDI - o mundo verde e melhor</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/icon_agromundi.png" />
-    <!-- Bootstrap CSS -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -27,23 +32,32 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-white">
             <div class="container-fluid px-6">
                 <span class="navbar-brand">
-                    <a href="/index.html#inicio">
-                        <img class="img-fluid" src="assets/logo_agromundi.png" alt="Agromundi">
-                        <p class="nav-slogan">o mundo verde e
-                            melhor
-                        </p>
-                    </a>
-                </span>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
+          <a href="/index.html#inicio">
+            <img class="img-fluid" src="assets/logo_agromundi.png" alt="Agromundi" />
+            <p class="nav-slogan">o mundo verde e melhor</p>
+          </a>
+        </span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="col-md-9">
                         <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="#inicio">INÍCIO</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#missao">MISSÃO & VISÃO</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#versoes">SOFTWARE / VERSÕES</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#contato">ENTRE EM CONTATO</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/auth/criar-conta">CADASTRE-SE</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#inicio">INÍCIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#missao">MISSÃO & VISÃO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#versoes">SOFTWARE / VERSÕES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contato">ENTRE EM CONTATO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/auth/criar-conta">CADASTRE-SE</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-3 login">
@@ -51,8 +65,8 @@
                             SE VOCÊ JÁ É CADASTRADO <br />CLIQUE NO SEU ESCRITÓRIO
                         </p>
                         <div class="row text-center">
-                            <a class="col-6 col-md-6 nav-link" href="/auth/acessar?tipo=1"><img class="img-fluid" src="assets/logo_escritorio.svg" alt="agromundi - escritório agrícola"></a>
-                            <a class="col-6 col-md-6 nav-link" href="/auth/acessar?tipo=2"><img class="img-fluid" src="assets/logo_terra.svg" alt="agromundi - escritório da terra"></a>
+                            <a class="col-6 col-md-6 nav-link" href="/auth/acessar?tipo=1"><img class="img-fluid" src="assets/logo_escritorio.svg" alt="agromundi - escritório agrícola" /></a>
+                            <a class="col-6 col-md-6 nav-link" href="/auth/acessar?tipo=2"><img class="img-fluid" src="assets/logo_terra.svg" alt="agromundi - escritório da terra" /></a>
                         </div>
                     </div>
                 </div>
@@ -65,13 +79,27 @@
                 <div class="row gx-5 align-items-center justify-content-center">
                     <div class="col-lg-10 col-xl-8 col-xxl-7">
                         <div class="my-5 text-center text-xl-center">
-                            <img class="img-fluid" src="assets/logo_agromundi.png" alt="agromundi - escritório agrícola">
-                            <h1 class="display-5 font-monospace fw-lighter text-white mb-4 text-shadow-1">PLATAFORMA DIGITAL AGRO
+                            <img class="img-fluid" src="assets/logo_agromundi.png" alt="agromundi - escritório agrícola" />
+                            <h1 class="
+                    display-5
+                    font-monospace
+                    fw-lighter
+                    text-white
+                    mb-4
+                    text-shadow-1
+                  ">
+                                PLATAFORMA DIGITAL AGRO
                             </h1>
-                            <p class="lead-ajust fw-normal text-white mb-4 text-shadow-1">Solução para gestão na
-                                <br />agricultura convencional e agricultura orgânica.
+                            <p class="lead-ajust fw-normal text-white mb-4 text-shadow-1">
+                                Solução para gestão na <br />agricultura convencional e agricultura orgânica.
                             </p>
-                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-center pt-3">
+                            <div class="
+                    d-grid
+                    gap-3
+                    d-sm-flex
+                    justify-content-sm-center justify-content-xl-center
+                    pt-3
+                  ">
                                 <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Entre e conheça</a>
                             </div>
                             <!-- Button trigger modal -->
@@ -108,39 +136,72 @@
         <section class="bg-green py-3" id="missao">
             <div class="container px-5 my-5">
                 <div class="row gx-5 align-items-center justify-content-center">
-                    <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="assets/missao.jpg" alt="..." />
+                    <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+                        <img class="img-fluid rounded-3 my-5" src="assets/missao.jpg" alt="..." />
                     </div>
                     <div class="col-lg-8 col-xl-7 col-xxl-6">
                         <div class="my-5 text-center text-xl-start">
-                            <h1 class="display-7 fw-bolder text-black mb-2">Missão & Visão</h1>
-                            <br>
-                            <p class="lead fw-normal text-black mb-4">Nossa visão projeta um cenário futuro de construção da plataforma Agromundi para integração e cooperação entre os principais agentes da cadeia do agronegócio.
-                                <br>
-                                <br> Nossa missão é apoiar o produtor através de ferramenta de gestão (software) com recursos de aprendizagem e difusão de conhecimento técnico no sentido de promover a autogestão na direção da produção saudável e sustentável.
+                            <h1 class="display-7 fw-bolder text-black mb-2">
+                                Missão & Visão
+                            </h1>
+                            <br />
+                            <p class="lead fw-normal text-black mb-4">
+                                Nossa visão projeta um cenário futuro de construção da plataforma Agromundi para integração e cooperação entre os principais agentes da cadeia do agronegócio.
+                                <br />
+                                <br /> Nossa missão é apoiar o produtor através de ferramenta de gestão (software) com recursos de aprendizagem e difusão de conhecimento técnico no sentido de promover a autogestão na direção da produção saudável e sustentável.
                             </p>
                         </div>
                     </div>
 
-                    <div class="row lead container-fluid bg-green ">
+                    <div class="row lead container-fluid bg-green">
                         <div class="col-xxl-4 mt-3 text-center">
-                            <div class="feature bg-success bg-gradient text-white rounded-3 mb-3 "><i class="bi bi-card-checklist"></i></div>
+                            <div class="
+                    feature
+                    bg-success bg-gradient
+                    text-white
+                    rounded-3
+                    mb-3
+                  ">
+                                <i class="bi bi-card-checklist"></i>
+                            </div>
                             <div class="h5 mb-2 text-center">Aprendizagem em gestão</div>
-                            <p class="mb-0 text-start">O produtor tem acesso aos conceitos fundamentais de gestão enquanto usa as funcionalidades do Escritório. Desta forma, a aprendisagem é aplicável de forma imediata, com análises e decisões que somam o olhar e o conhecimento
-                                do produtor às informações que o sistema gera.
+                            <p class="mb-0 text-start">
+                                O produtor tem acesso aos conceitos fundamentais de gestão enquanto usa as funcionalidades do Escritório. Desta forma, a aprendisagem é aplicável de forma imediata, com análises e decisões que somam o olhar e o conhecimento do produtor às informações
+                                que o sistema gera.
                             </p>
                         </div>
                         <div class="col-xxl-4 mt-3 text-center">
-                            <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-people-fill"></i></div>
+                            <div class="
+                    feature
+                    bg-success bg-gradient
+                    text-white
+                    rounded-3
+                    mb-3
+                  ">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
                             <div class="h5 text-center">Cooperação e integração</div>
-                            <p class="mb-0 text-start">A formação de ranqueamentos comparativos de indices de eficiência analisadas de forma holística permite aos produtore, em anonimato, avaliar seu nível de resultado em relação ao que é praticado por produtores da mesma cultura
-                                em condições semelhantes. A análise de gaps (falhas) fica objetiva e permite a orientação da assistência técnica e adoção de tecnologias.
+                            <p class="mb-0 text-start">
+                                A formação de ranqueamentos comparativos de indices de eficiência analisadas de forma holística permite aos produtore, em anonimato, avaliar seu nível de resultado em relação ao que é praticado por produtores da mesma cultura em condições semelhantes.
+                                A análise de gaps (falhas) fica objetiva e permite a orientação da assistência técnica e adoção de tecnologias.
                             </p>
                         </div>
                         <div class="col-xxl-4 mt-3 text-center">
-                            <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="fas fa-seedling"></i></div>
-                            <div class="h5 text-center">Produção saudável e sustentável</div>
-                            <p class="mb-0 text-start">Dispositivos de aviso de segurança quanto ao registro e prazos de carência de insumos no momento de seu preparo e aplicação garantem segurança para a produção saudável e ambientalmente responsável, fazendo com que sustentabilidade
-                                não permaneça apenas um discurso, mas sim atitudes do dia a dia.
+                            <div class="
+                    feature
+                    bg-success bg-gradient
+                    text-white
+                    rounded-3
+                    mb-3
+                  ">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="h5 text-center">
+                                Produção saudável e sustentável
+                            </div>
+                            <p class="mb-0 text-start">
+                                Dispositivos de aviso de segurança quanto ao registro e prazos de carência de insumos no momento de seu preparo e aplicação garantem segurança para a produção saudável e ambientalmente responsável, fazendo com que sustentabilidade não permaneça apenas
+                                um discurso, mas sim atitudes do dia a dia.
                             </p>
                         </div>
                     </div>
@@ -158,8 +219,10 @@
                     <!-- Pricing card-->
                     <div class="col-lg-6 col-xl-4">
                         <div class="card mb-5 mb-xl-0">
-                            <div class="card-body p-5">
-                                <div class="small text-uppercase fw-bold text-muted">Versão E1</div>
+                            <div class="card-body p-4">
+                                <div class="small text-uppercase fw-bold text-muted">
+                                    Versão E1
+                                </div>
                                 <div class="mb-3">
                                     <span class="display-4 fw-bold">R$20</span>
                                     <span class="text-muted">/ mês</span>
@@ -183,14 +246,15 @@
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i> APRENDIZAGEM EM GESTÃO 1 & 2
                                     </li>
-                                    <li class="mb-2 text-muted">
-                                        &nbsp;
-                                    </li>
-                                    <li class="text-muted">
-                                        &nbsp;
+                                    <li class="mb-2 text-muted">&nbsp;</li>
+                                    <li class="mb-2 text-muted">&nbsp;</li>
+                                    <li class="mb-2 text-muted">&nbsp;</li>
+                                    <li class="mb-2" tabindex="0" data-placement="top" role="button" data-toggle="popover" data-trigger="hover" title="VERSÃO E1" data-html="true" data-content='Com essa versão você consegue atender à exigência legal de <strong>RASTREABILIDADE</strong> e gerar a <strong>PROJEÇÃO DE COLHEITA</strong>, essencial para planejamento de vendas e parcerias comerciais, em especial em ambientes cooperados. O controle de <strong>ESTOQUES</strong> lhe permitirá fazer novas compras, saber o que tem em estoque para programar suas tarefas semanais. Nesta versão fará registros financeiros de forma simples e objetiva e terá assim um <strong>RELATÓRIO GERAL DE SAÍDAS E ENTRADAS</strong>. Nesta versão, você terá ainda o <strong>MAPA DE OCUPAÇÃO</strong> - muito útil na horticultura - e inicia o acesso ao conhecimento fundamental em gestão com o <strong>APRENDIZAGEM EM GESTÃO 1 & 2, que já te prepara para os próximos passos na gestão e lhe permitirá rapidamente evoluir para o controle de custos</strong>.'>
+                                        <a class="text-success">Saiba mais</a>
                                     </li>
                                 </ul>
-                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Escolha esse plano</a>
+                                <div class="d-grid">
+                                    <a class="btn btn-outline-primary" href="#!">Escolha esse plano</a>
                                 </div>
                             </div>
                         </div>
@@ -198,7 +262,7 @@
                     <!-- Pricing card-->
                     <div class="col-lg-6 col-xl-4">
                         <div class="card mb-5 mb-xl-0">
-                            <div class="card-body p-5">
+                            <div class="card-body p-4">
                                 <div class="small text-uppercase fw-bold text-muted">
                                     Versão E2 (+versão anterior)
                                 </div>
@@ -214,13 +278,13 @@
                                         <i class="bi bi-check text-primary"></i> CONTAS A PAGAR & RECEBER
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> CUSTOS & MARGENS
+                                        <i class="bi bi-check text-primary"></i> CUSTOS & MARGENS POR PRODUTO
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i> PRODUTIVIDADE
                                     </li>
                                     <li class="mb-2">
-                                        <i class="bi bi-check text-primary"></i> RANQUEAMENTO DE ÍNDICES
+                                        <i class="bi bi-check text-primary"></i> RANQUEAMENTO DE ÍNDICES POR PRODUTO
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i> LISTA DE COMPRAS 1
@@ -231,17 +295,29 @@
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i> APRENDIZAGEM EM GESTÃO 3
                                     </li>
+                                    <li class="mb-2">&nbsp;</li>
+                                    <li class="mb-2" tabindex="0" data-placement="top" role="button" data-toggle="popover" data-trigger="hover" title="VERSÃO E2" data-html="true" data-content='Com essa versão, além dos benefícios da VERSÃO E1, você dará o primeiro passo para um bom controle financeiro com o controle de 
+                                    <strong>ENTRADAS E SAÍDAS</strong> e <strong>CONTAS A PAGAR & RECEBER</strong>.  À medida que sua escala de produção cresce, maior a necessidade de saber qual cultura lhe deu resultado, 
+                                    o que é possível através dos relatórios de <strong>CUSTOS & MARGENS / PRODUTO, PRODUTIVIDADE por cultura e área</strong>. Você terá acesso ao <strong>RANQUEAMENTO DE ÍNDICES</strong>, 
+                                    onde os índices principais são comparados com outros usuários nas mesmas culturas e região onde você está – o ranqueamento é feito em regime de <strong>privacidade</strong>. 
+                                    São indicadores importantes para dizer se as coisas estão indo bem ou não. Se você estiver ligado a uma cooperativa, isto ajuda a direcionar a 
+                                    assistência técnica e o planejamento de vendas balizado nos custos e projeção de colheita.'>
+                                        <a class="text-success">Saiba mais</a>
+                                    </li>
                                 </ul>
-                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Escolha esse plano</a>
+                                <div class="d-grid">
+                                    <a class="btn btn-outline-primary" href="#!">Escolha esse plano</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- Pricing card-->
                     <div class="col-lg-6 col-xl-4">
-                        <div class="card">
-                            <div class="card-body p-5" id="cardpopover">
-                                <div class="small text-uppercase fw-bold"> <i class="bi bi-star-fill text-warning"></i> Versão E3 (+versões anteriores)</div>
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-4">
+                                <div class="small text-uppercase fw-bold">
+                                    <i class="bi bi-star-fill text-warning"></i> Versão E3 (+versões anteriores)
+                                </div>
                                 <div class="mb-3">
                                     <span class="display-4 fw-bold">R$150</span>
                                     <span class="text-muted">/ mês</span>
@@ -268,20 +344,26 @@
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i> APRENDIZAGEM EM GESTÃO 4
                                     </li>
-                                    <li class="mb-2">
-                                        &nbsp;
+                                    <li class="mb-2">&nbsp;</li>
+                                    <li class="mb-2 text-muted">&nbsp;</li>
+                                    <li class="mb-2" tabindex="0" data-placement="top" role="button" data-toggle="popover" data-trigger="hover" title="VERSÃO E3" data-html="true" data-content='Nessa versão você integra funcionalidades muito importantes relacionadas à área financeira de sua atividade, 
+                                    que são fundamentais para gerenciar o dia a dia, a exemplo do fluxo de caixa. Também poderá saber no final do mês quanto você tem, 
+                                    quanto gastou, quanto recebeu, o quanto você deve e o que tem a receber e, assim, calibrar suas compras. À medida que sua escala de 
+                                    produção cresce, maior a necessidade de saber qual cultura lhe deu resultado, qual foi o resultado por área e o resultado geral.'>
+                                        <a class="text-success">Saiba mais</a>
                                     </li>
                                 </ul>
-                                <div class="d-grid"><a class="btn btn-primary-plan" href="#!">Escolha esse plano</a>
+                                <div class="d-grid">
+                                    <a class="btn btn-primary-plan" href="#!">Escolha esse plano</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <p class="lead fw-normal text-muted mb-0 mt-4 text-center"><a class="btn btn-outline-primary btn-block" href="/pricing.html">Conheça as versões futuras.</a>
+                <p class="lead fw-normal text-muted mb-0 mt-4 text-center">
+                    <a class="btn btn-outline-primary btn-block" href="/pricing.html">Conheça as versões futuras.</a>
                 </p>
             </div>
-
         </section>
         <!-- Contact section-->
         <section class="bg-green py-6 cid-sySngyyzlL" id="contato">
@@ -289,9 +371,13 @@
                 <!-- Contact form-->
                 <div class="bg-light-50 rounded-3 py-5 px-md-5 mb-5 mt-5">
                     <div class="text-center">
-                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-3">
+                            <i class="bi bi-envelope"></i>
+                        </div>
                         <h1 class="fw-bolder">Entre em contato</h1>
-                        <p class="lead lead-contact fw-normal text-black mb-0">Como podemos ajudar você</p>
+                        <p class="lead lead-contact fw-normal text-black mb-0">
+                            Como podemos ajudar você
+                        </p>
                     </div>
                     <div class="row mt-5 justify-content-center">
                         <div class="col-lg-10 col-xl-12">
@@ -313,33 +399,37 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating mb-3">
-                                            <textarea class="form-control" id="inputMessage" type="text" placeholder="Escreva sua menssagem aqui. *" style="height: 17.5rem;"></textarea>
+                                            <textarea class="form-control" id="inputMessage" type="text" placeholder="Escreva sua menssagem aqui. *" style="height: 17.5rem"></textarea>
                                         </div>
                                     </div>
                                     <div class="container-fluid col-md-6">
                                         <div class="form-floating mb-3">
                                             <!-- <input type="submit" value="Enviar" class="d-grid btn btn-success btn-lg"> -->
-                                            <div class="d-grid"><a class="btn btn-success btn-lg" href="#!">Enviar</a>
+                                            <div class="d-grid">
+                                                <a class="btn btn-success btn-lg" href="#!">Enviar</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
                             </form>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
-
     </main>
     <!-- Footer-->
     <footer class="bg-white py-4 mt-auto">
         <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="
+            row
+            align-items-center
+            justify-content-between
+            flex-column flex-sm-row
+          ">
                 <div class="col-auto">
-                    <div class="small m-0 text-success">Copyright &copy; Agromundi 2021
+                    <div class="small m-0 text-success">
+                        Copyright &copy; Agromundi 2021
                     </div>
                 </div>
                 <div class="col-auto">
@@ -351,10 +441,9 @@
         </div>
     </footer>
     <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script> -->
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- <script>$('[data-toggle="popover"]').popover();</script> -->
+    <script src="/js/scripts.js"></script>
 </body>
 
 </html>
