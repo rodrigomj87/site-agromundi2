@@ -5960,7 +5960,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 1200px) {
     .modal-xl {
-        max-width: 1140px;
+        min-width: 1140px;
     }
 }
 
@@ -10820,7 +10820,6 @@ html {
 }
 
 .modal-dialog {
-    max-width: 800px;
     margin: 30px auto;
 }
 
